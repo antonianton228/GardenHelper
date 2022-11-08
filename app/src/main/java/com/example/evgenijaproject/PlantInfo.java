@@ -20,6 +20,7 @@ import com.google.gson.Gson;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -76,10 +77,19 @@ public class PlantInfo extends AppCompatActivity {
 //            arrayList.add("Необходимо полить растение");
 //            arrayList.add("#FF0000");
 //            }
+        int curMonth = Integer.parseInt(new SimpleDateFormat("MM").format(new Date()));
+        ArrayList<NeedClass> arrOfCurr = new ArrayList<NeedClass>();
+        for(int i = 0; i < fullArray.size(); i++){
 
-        infoAdapetr infoAdapetr = new infoAdapetr(this, R.layout.list_needed, fullArray);
+            if(fullArray.get(i).mon == curMonth){
+                arrOfCurr.add(0, fullArray.get(i));
+            }
+        }
+        Toast.makeText(getApplicationContext(),"asd3", Toast.LENGTH_SHORT).show();
 
-        infoAdapetr.notifyDataSetChanged();
+        if(arrOfCurr != null) {
+            infoAdapetr infoAdapetr = new infoAdapetr(this, R.layout.list_needed, arrOfCurr);
+            infoAdapetr.notifyDataSetChanged();
 
 
         ListView listneed = (ListView)findViewById(R.id.listofneed);
@@ -112,7 +122,7 @@ public class PlantInfo extends AppCompatActivity {
 
 
             }
-        });
+        });}
 
     }
 

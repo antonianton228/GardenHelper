@@ -8,6 +8,7 @@ public class NeedClass {
     String Des;
     Date Last;
     int Delta;
+    int mon;
 
     public String getName() {
         return Name;
@@ -21,15 +22,17 @@ public class NeedClass {
         return Last;
     }
 
+
     public void setDate(Date d){
         Last = d;
     }
 
-    public NeedClass(String name, String des, Date last, int delta){
+    public NeedClass(String name, String des, Date last, int delta, int month){
         Name = name;
         Des = des;
         Last = last;
         Delta = delta;
+        mon = month;
     }
 
     public boolean checkDate(){

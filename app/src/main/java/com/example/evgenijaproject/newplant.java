@@ -29,7 +29,7 @@ public class newplant extends AppCompatActivity {
         switch (v.getId()){
             case R.id.plant1:
                 ArrayList<NeedClass> array = new ArrayList<>();
-                array.add(new NeedClass("Полить", "1 день", new Date(0), 1));
+                array.add(new NeedClass("Полить", "1 день", new Date(0), 1, 1));
                 Gson gson = new Gson();
                 String json = gson.toJson(array);
                 ret = new Object[] {R.drawable.ficus, "Фикус", "Нет уведомлений", "Тут описание", json};
@@ -40,7 +40,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant2:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Выкопать", "120 дней", new Date(0), 120));
+                array.add(new NeedClass("Выкопать", "120 дней", new Date(0), 120, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.potato, "Картофель", "Нет уведомлений", "Тут описание", json};
@@ -50,7 +50,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant3:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Полить", "1 день", new Date(0), 1));
+                array.add(new NeedClass("Полить", "1 день", new Date(0), 1, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.ukrop, "Укроп", "Нет уведомлений", "Тут описание", json};
@@ -60,7 +60,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant4:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Полить", "1 день", new Date(0), 1));
+                array.add(new NeedClass("Полить", "1 день", new Date(0), 1, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.parrot, "Морковь", "Нет уведомлений", "Тут описание", json};
@@ -70,7 +70,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant5:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Подкормить", "365 день", new Date(0), 365));
+                array.add(new NeedClass("Подкормить", "365 день", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.cherry, "Черешня", "Нет уведомлений", "Тут описание", json};
@@ -80,7 +80,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant6:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Полить", "1 день", new Date(0), 1));
+                array.add(new NeedClass("Полить", "1 день", new Date(0), 1, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.rodondedron, "Рододендрон", "Нет уведомлений", "Тут описание", json};
@@ -90,7 +90,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant7:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365));
+                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.riabina, "Рябина", "Нет уведомлений", "Тут описание", json};
@@ -100,7 +100,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant8:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365));
+                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.apple, "Яблоня", "Нет уведомлений", "Тут описание", json};
@@ -110,7 +110,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant9:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365));
+                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.berry, "Черника", "Нет уведомлений", "Тут описание", json};
@@ -120,7 +120,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant10:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365));
+                array.add(new NeedClass("Собрать", "365 дней", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.malina, "Малина", "Нет уведомлений", "Тут описание", json};
@@ -130,7 +130,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant11:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Полить", "1 день", new Date(0), 365));
+                array.add(new NeedClass("Полить", "1 день", new Date(0), 365, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.fasol, "Фасоль", "Нет уведомлений", "Тут описание", json};
@@ -140,7 +140,7 @@ public class newplant extends AppCompatActivity {
                 break;
             case R.id.plant12:
                 array = new ArrayList<>();
-                array.add(new NeedClass("Найти", "1 день", new Date(0), 1));
+                array.add(new NeedClass("Найти", "1 день", new Date(0), 1, 1));
                 gson = new Gson();
                 json = gson.toJson(array);
                 ret = new Object[] {R.drawable.cocos, "Кокос", "Нет уведомлений", "Тут описание", json};

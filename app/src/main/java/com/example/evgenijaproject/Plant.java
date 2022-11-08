@@ -1,5 +1,6 @@
 package com.example.evgenijaproject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -90,7 +91,16 @@ public class Plant {
         }
     }
     public ArrayList<NeedClass> getArray() {
-        return Array;
+
+        int curMonth = Integer.parseInt(new SimpleDateFormat("MM").format(new Date()));
+        ArrayList<NeedClass> arrOfCurr = new ArrayList<NeedClass>();
+        for(int i = 0; i < Array.size(); i++){
+
+            if(Array.get(i).mon == curMonth){
+                arrOfCurr.add(0, Array.get(i));
+            }
+        }
+        return arrOfCurr;
     }
 
 
