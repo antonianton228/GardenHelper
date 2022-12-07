@@ -34,6 +34,7 @@ public class PlantInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant_info);
 
@@ -85,7 +86,6 @@ public class PlantInfo extends AppCompatActivity {
                 arrOfCurr.add(0, fullArray.get(i));
             }
         }
-        Toast.makeText(getApplicationContext(),"asd3", Toast.LENGTH_SHORT).show();
 
         if(arrOfCurr != null) {
             infoAdapetr infoAdapetr = new infoAdapetr(this, R.layout.list_needed, arrOfCurr);
@@ -99,11 +99,10 @@ public class PlantInfo extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(self, PlantInfo.class);
-                fullArray.get(i).setDate(new Date());
+
+                arrOfCurr.get(i).setDate(new Date());
                 infoAdapetr.notifyDataSetChanged();
                 listneed.setAdapter(infoAdapetr);
-
-
 //                Gson gson = new Gson();
 //                String json = gson.toJson(arrayList.get(i));
 //                intent.putExtra("plant", json);

@@ -39,8 +39,6 @@ public class MainActivity extends ListActivity{
         plantAdapter plantAdapter = new plantAdapter(this, R.layout.list_row,arrayList);
         setContentView(R.layout.activity_main);
         ListView listView = (ListView)findViewById(android.R.id.list) ;
-        TextView date_now = (TextView) findViewById(R.id.textView);
-        date_now.setText(new Date().toString());
 
 
 
@@ -74,12 +72,6 @@ public class MainActivity extends ListActivity{
 
         plantAdapter.notifyDataSetChanged();
         listView.setAdapter(plantAdapter);
-        new Timer().scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                date_now.setText(new Date().toString());
-            }
-        }, 0, 1000);
 
 
 

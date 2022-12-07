@@ -74,7 +74,7 @@ public class Plant {
         //int a = timeControl.check_everyday_func(is_wash);
         Alarm = 0;
         for(int i = 0; i < getArray().size(); i++){
-            if (getArray().get(i).checkDate()){
+            if (getArray().get(getArray().size() - i - 1).checkDate()){
                 Alarm -= 1;
             }
             else{

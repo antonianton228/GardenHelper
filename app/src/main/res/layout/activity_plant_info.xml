@@ -10,12 +10,11 @@
         android:id="@+id/Image"
         android:layout_width="162dp"
         android:layout_height="152dp"
-        android:layout_marginStart="40dp"
         android:layout_marginEnd="11dp"
         app:layout_constraintEnd_toStartOf="@+id/Name"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/apple"
-        tools:layout_editor_absoluteY="17dp" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/Name"
@@ -33,20 +32,21 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="310dp"
         android:layout_marginStart="47dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="41dp"
-        android:text="Здесь будет описание"
+        android:text="кустарниковое растение со сладкими тёмно-красными ягодами, а также сами ягоды его. Растение плохо переносит засуху и сухую землю. По этой причине следует обеспечивать кустам правильный полив. Из-за отсутствия влаги у малины начнут желтеть и высыхать листья. По этой причине для ягоды рекомендуется выбирать места с влажной почвой, которая только положительно будет отражаться на урожае. Важнейший период в уходе за малиной – осень."
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toEndOf="@+id/Image"
         app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <Button
         android:id="@+id/back_but"
-        android:layout_width="75dp"
-        android:layout_height="35dp"
+        android:layout_width="112dp"
+        android:layout_height="45dp"
         android:layout_marginStart="291dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
@@ -59,10 +59,10 @@
 
     <ListView
         android:id="@+id/listofneed"
-        android:layout_width="409dp"
-        android:layout_height="493dp"
+        android:layout_width="404dp"
+        android:layout_height="281dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/back_but"
         app:layout_constraintEnd_toEndOf="parent" />
 

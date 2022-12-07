@@ -7,12 +7,13 @@
 
     <TextView
         android:id="@+id/washingDes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="302dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
         android:text="Вишню надо поливать раз в ....."
         app:layout_constraintBottom_toTopOf="@+id/lastWAshName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

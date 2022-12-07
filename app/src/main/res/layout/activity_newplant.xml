@@ -43,35 +43,35 @@
                         android:scaleType="centerCrop"
 
 
-                        android:text="plant1"
-                        android:src="@drawable/ficus"/>
+                        android:src="@drawable/malina"
+                        android:text="plant1" />
 
                     <ImageButton
                         android:id="@+id/plant2"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant2"
-                        android:src="@drawable/potato"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/goroh"
+                        android:text="plant2" />
 
                     <ImageButton
                         android:id="@+id/plant3"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant3"
-                        android:src="@drawable/ukrop"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/grusha"
+                        android:text="plant3" />
 
                     <ImageButton
                         android:id="@+id/plant4"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant4"
-                        android:src="@drawable/parrot"
-                        android:scaleType="centerCrop"/>/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vanya"
+                        android:text="plant4" />/>
                 </TableRow>
 
                 <TableRow
@@ -83,76 +83,77 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant5"
-                        android:src="@drawable/cherry"
-                        android:scaleType="centerCrop"/>/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/potato"
+                        android:text="plant5" />/>
 
                     <ImageButton
                         android:id="@+id/plant6"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant6"
-                        android:src="@drawable/rodondedron"
-                        android:scaleType="centerCrop"/>/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chriz"
+                        android:text="plant6" />/>
 
                     <ImageButton
                         android:id="@+id/plant7"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant7"
-                        android:src="@drawable/riabina"
-                        android:scaleType="centerCrop"/>/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/klubnika"
+                        android:text="plant7" />/>
 
                     <ImageButton
                         android:id="@+id/plant8"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant8"
-                        android:src="@drawable/apple"
-                        android:scaleType="centerCrop"/>/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chesnok"
+                        android:text="plant8" />/>
                 </TableRow>
 
                 <TableRow
                     android:layout_width="292dp"
                     android:layout_height="101dp">
+
                     <ImageButton
                         android:id="@+id/plant9"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant9"
-                        android:src="@drawable/berry"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/svekla"
+                        android:text="plant9" />
 
                     <ImageButton
                         android:id="@+id/plant10"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant10"
-                        android:src="@drawable/malina"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redis"
+                        android:text="plant10" />
 
                     <ImageButton
                         android:id="@+id/plant11"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant11"
-                        android:src="@drawable/fasol"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ukrop"
+                        android:text="plant11" />
 
                     <ImageButton
                         android:id="@+id/plant12"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:onClick="plant"
-                        android:text="plant12"
-                        android:src="@drawable/cocos"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/petrushka"
+                        android:text="plant12" />
                 </TableRow>
             </TableLayout>
 
