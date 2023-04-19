@@ -28,20 +28,8 @@
         app:layout_constraintBottom_toTopOf="@+id/description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Image"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="215dp"
-        android:layout_height="310dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="41dp"
-        android:text="кустарниковое растение со сладкими тёмно-красными ягодами, а также сами ягоды его. Растение плохо переносит засуху и сухую землю. По этой причине следует обеспечивать кустам правильный полив. Из-за отсутствия влаги у малины начнут желтеть и высыхать листья. По этой причине для ягоды рекомендуется выбирать места с влажной почвой, которая только положительно будет отражаться на урожае. Важнейший период в уходе за малиной – осень."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toEndOf="@+id/Image"
-        app:layout_constraintTop_toBottomOf="@+id/Name" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/back_but"
@@ -49,7 +37,6 @@
         android:layout_height="45dp"
         android:layout_marginStart="291dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
         android:onClick="back"
         android:text="назад"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,11 +46,40 @@
 
     <ListView
         android:id="@+id/listofneed"
-        android:layout_width="404dp"
-        android:layout_height="281dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="389dp"
+        android:layout_height="208dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/back_but"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/listofneed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image"
+        app:layout_constraintVertical_bias="0.065">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="372dp"
+                android:layout_height="256dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:overScrollMode="always"
+                android:text="кустарниковое растение со сладкими тёмно-красными ягодами, а также сами ягоды его. Растение плохо переносит засуху и сухую землю. По этой причине следует обеспечивать кустам правильный полив. Из-за отсутствия влаги у малины начнут желтеть и высыхать листья. По этой причине для ягоды рекомендуется выбирать места с влажной почвой, которая только положительно будет отражаться на урожае. Важнейший период в уходе за малиной – осень." />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
